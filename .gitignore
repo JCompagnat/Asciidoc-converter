@@ -1,0 +1,17 @@
+config.yaml
+
+*.pdf
+*.docx
+*.adoc
+*.log
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.yaml
+*.ttf
+*.DS_Store
+
+# Fichiers de configuration locales
+.env
+.themes
