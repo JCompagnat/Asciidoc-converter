@@ -12,6 +12,7 @@ config.yaml
 *.ttf
 *.DS_Store
 
+
 # Fichiers de configuration locales
 .env
 .themes

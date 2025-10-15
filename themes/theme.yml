@@ -1,0 +1,200 @@
+extends: default
+
+font:
+  catalog:
+    "Noto Sans":
+      normal: NotoSans-Regular.ttf
+      italic: NotoSans-Italic.ttf
+      bold: NotoSans-Bold.ttf
+      bold_italic: NotoSans-BoldItalic.ttf
+    "Noto Sans Symbols2":
+      normal: NotoSansSymbols2-Regular.ttf
+  fallbacks:
+    - "Noto Sans"
+    - "Noto Sans Symbols2"
+
+base:
+  font-family: "Noto Sans"
+  monospace-font-family: "Noto Sans"   # <— key fix: covers code/monospace
+  font-size: 10
+  line-height-length: 1.4
+  font-color: #222222
+  align: justify
+
+# Inline code
+codespan:
+  font-family: "Noto Sans"
+  font-size: 9
+  background-color: #f7f7f7
+  border-color: #dddddd
+  border-width: 0.5
+  padding: [4, 4, 4, 4]
+
+# Code blocks (listing/literal/source)
+code:
+  font-family: "Noto Sans"
+  font-size: 9
+  background-color: #f7f7f7
+  border-color: #dddddd
+  border-width: 0.5
+  padding: [6, 6, 6, 6]
+
+# === BASE TYPOGRAPHIE ===
+base:
+  font-family: "Noto Sans"
+  font-size: 10
+  line-height-length: 1.4
+  font-color: #222222
+  align: justify
+
+# === TITRES ===
+heading:
+  font-family: "Noto Sans"
+  font-style: bold
+  font-color: #002b5c
+  line-height-length: 1.2
+  margin-bottom: 6
+  text-transform: none
+  h1-font-size: 20
+  h2-font-size: 16
+  h3-font-size: 14
+  h4-font-size: 12
+  h5-font-size: 11
+  h6-font-size: 10
+  h1-margin-bottom: 12
+  h2-margin-bottom: 10
+  h3-margin-bottom: 8
+
+# === TABLE DES MATIÈRES ===
+toc:
+  font-family: "Noto Sans"
+  font-size: 9
+  line-height-length: 1.2
+  indent: 15
+  dot-leader:
+    content: "."
+    font-color: #888888
+  title:
+    font-family: "Noto Sans"
+    font-style: bold
+    font-color: #002b5c
+    font-size: 12
+    align: left
+
+# === EN-TÊTE & PIED DE PAGE ===
+header:
+  height: 0.8cm
+  line-height: 1
+  recto:
+    right:
+      content: "{document-title}"
+  verso:
+    right:
+      content: "{document-title}"
+
+footer:
+  height: 0.8cm
+  line-height: 1
+  recto:
+    right:
+      content: "Page {page-number} / {page-count}"
+    left:
+      content: "{docdate}"
+  verso:
+    right:
+      content: "Page {page-number} / {page-count}"
+    left:
+      content: "{docdate}"
+
+# === LISTES ET BLOCS ===
+list:
+  indent: 15
+  item-spacing: 2
+  marker-font-color: #002b5c
+
+quote:
+  font-color: #444444
+  font-style: italic
+  border-color: #002b5c
+  border-width: 2
+  padding: 8
+
+# === TABLEAUX ===
+table:
+  font-family: "Noto Sans"
+  border-color: #cccccc
+  border-width: 0.5
+  grid-color: #cccccc
+  head:
+    background-color: #f2f2f2
+    font-style: bold
+  body:
+    stripe-background-color: #fafafa
+  caption:
+    font-style: italic
+    align: left
+    font-color: #555555
+
+# === IMAGES ===
+image:
+  align: center
+  caption:
+    font-style: italic
+    font-color: #666666
+    font-size: 9
+  scaled-width: 90%
+
+# === ADMONITIONS ===
+admonition:
+  icon:
+    tip:
+      name: lightbulb-outline
+      stroke-color: #336600
+    note:
+      name: information-outline
+      stroke-color: #0050b3
+    warning:
+      name: alert-outline
+      stroke-color: #cc7a00
+    caution:
+      name: alert-octagon-outline
+      stroke-color: #cc0000
+  border-color: #cccccc
+  padding: [6, 6, 6, 6]
+  label:
+    font-style: bold
+
+# === CODE ET BLOCS ===
+codespan:
+  font-family: "Courier"
+  font-size: 9
+  background-color: #f7f7f7
+  border-color: #dddddd
+  border-width: 0.5
+  padding: [4, 4, 4, 4]
+
+sidebar:
+  background-color: #f9f9f9
+  border-color: #d0d0d0
+  border-width: 1
+  padding: [8, 8, 8, 8]
+  title:
+    font-family: "Noto Sans"
+    font-style: bold
+    font-color: #002b5c
+
+codespan:
+  font-family: "Noto Sans"
+  font-size: 9
+
+literal:
+  font-family: "Noto Sans"
+  font-size: 9
+  background-color: #f7f7f7
+  border-color: #dddddd
+  border-width: 0.5
+  padding: [4, 4, 4, 4]
+
+conum:
+  font-family: "Noto Sans"
+  font-style: bold
